@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="style.css"></head>
+    <body>
+        <h1>Temperature Converter</h1>
+        <div class="container">
+            <div class="calculate">
+            <form id="calcTemp" onsubmit="calculateTemp(); return false">
+            <label style="font-size: 30px;"for="temp">Enter temperature:</label>
+            <br>
+            <input style="height:30px;" type="number" name="temp" id="temp" value="0">
+            <select style="height:35px;" name="temp_diff" id="temp_diff">
+                <option value="cel">&#176;Celcius</option>
+                <option value="fah">&#176;Fahrenheit</option>
+                <option value="kel">&#176;Kelvin</option>
+            </select>
+            <br><br><br>
+            <input style="height:30px; font-size: 20px;font-family: cursive;"type="submit" name="temp" id="submit">
+            <br>
+        </div>
+            <div class="result">
+                <h3>Result</h3>
+            <span id="result"></span>
+            </div>
+        </form>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
